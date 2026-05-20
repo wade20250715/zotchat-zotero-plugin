@@ -1,0 +1,16 @@
+{
+  "llm_api_key": "sk-64921a4aaf174676a8229e781bc235e4",
+  "llm_base_url": "https://api.deepseek.com/v1",
+  "llm_model": "deepseek-v4-flash",
+  "server_host": "127.0.0.1",
+  "server_port": 7890,
+  "zotero_db_path": "C:\\Users\\12462\\Zotero\\zotero.sqlite",
+  "pdf_dirs": [
+    "D:\\研究计划\\lunwen\\My EndNote Library.Data\\PDF",
+    "D:\\中文版论文库"
+  ],
+  "max_pdfs_to_index": 200,
+  "chunk_size": 1500,
+  "chunk_overlap": 200,
+  "retrieval_k": 5
+}
