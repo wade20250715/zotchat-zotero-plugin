@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<RDF:RDF
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+    xmlns:NC="http://home.netscape.com/NC-rdf#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description
+        RDF:about="urn:mozilla:install-manifest"
+        em:id="zotchat@myaifactory.local"
+        em:name="ZotChat"
+        em:version="1.0.0"
+        em:type="2"
+        em:creator="ZotChat"
+        em:description="AI 论文对话 · 在 Zotero 中跟你的论文库聊天"
+        em:homepageURL=""
+        em:iconURL="chrome://ZotChat/content/icons/icon48.png"
+        em:optionsURL="chrome://ZotChat/content/preferences.xul"
+        em:updateURL=""
+        em:bootstrap="true"
+        em:multiprocessCompatible="true"
+        em:hasEmbeddedWebExtension="true">
+        <em:targetApplication>
+            <Description>
+                <em:id>zotero@chnm.gmu.edu</em:id>
+                <em:minVersion>7.0</em:minVersion>
+                <em:maxVersion>9.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+    </RDF:Description>
+</RDF:RDF>

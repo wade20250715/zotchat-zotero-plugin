@@ -1,0 +1,39 @@
+[
+  {
+    "namespace": "zotChat",
+    "description": "ZotChat API",
+    "functions": [
+      {
+        "name": "getPapers",
+        "type": "function",
+        "description": "获取论文列表",
+        "async": true,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "refresh": {
+              "type": "boolean",
+              "description": "是否刷新缓存",
+              "optional": true
+            }
+          }
+        }
+      },
+      {
+        "name": "sendChat",
+        "type": "function",
+        "description": "发送聊天消息",
+        "async": true,
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "messages": {
+              "type": "array",
+              "description": "聊天消息列表"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

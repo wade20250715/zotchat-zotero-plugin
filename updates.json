@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "zotchat@myaifactory.local": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/wade20250715/zotchat-zotero-plugin/releases/download/v1.0.0/zotchat.xpi"
+        }
+      ]
+    }
+  }
+}

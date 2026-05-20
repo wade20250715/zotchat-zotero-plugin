@@ -1,0 +1,3 @@
+content ZotChat chrome/content/
+locale ZotChat en-US chrome/locale/en-US/
+locale ZotChat zh-CN chrome/locale/zh-CN/

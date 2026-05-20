@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "ZotChat",
+  "version": "1.0.0",
+  "description": "AI 论文对话 · 在 Zotero 中跟你的论文库聊天",
+  "author": "ZotChat",
+  "icons": {
+    "48": "chrome/content/icons/icon48.png",
+    "96": "chrome/content/icons/icon96.png"
+  },
+  "applications": {
+    "zotero": {
+      "id": "zotchat@myaifactory.local",
+      "update_url": "",
+      "strict_min_version": "6.999",
+      "strict_max_version": "9.*"
+    }
+  },
+  "default_locale": "zh-CN"
+}
