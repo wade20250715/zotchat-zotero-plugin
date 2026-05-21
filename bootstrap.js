@@ -72,9 +72,15 @@ function addPanel(win, rootURI) {
     if (win.document.getElementById("zotchat-box")) return;
 
     const doc = win.document;
-    const paneHeader = doc.querySelector("#zotero-item-pane-header");
+
+    // Zotero 9: 尝试多种方式找到右侧面板容器
+    // Zotero 7+: #zotero-item-pane-header
+    // Zotero 9:  .zotero-pane-content, tabbox, 或 #zotero-item-pane
+    const paneHeader = doc.querySelector(
+        "#zotero-item-pane-header, #zotero-item-pane, .zotero-pane-content"
+    );
     if (!paneHeader) {
-        Zotero.log(`${PLUGIN_NAME}: item-pane-header not found, will retry`, "zotchat");
+        Zotero.log(`${PLUGIN_NAME}: pane container not found, will retry`, "zotchat");
         win.setTimeout(() => addPanel(win, rootURI), 1000);
         return;
     }
@@ -87,8 +93,15 @@ function addPanel(win, rootURI) {
     tab.setAttribute("tooltiptext", "AI 对话 · 跟论文聊天");
     tab.addEventListener("click", () => toggle(win));
 
-    const tabBox = paneHeader.querySelector("tabbox, .tab-bar") || paneHeader;
-    tabBox.appendChild(tab);
+    // 找到或创建 tabbar
+    const tabBox = doc.querySelector("tabbox, .tab-bar, #zotero-item-pane-header");
+    if (tabBox) {
+        // Zotero 7+ 直接在 tabbox 追加
+        tabBox.appendChild(tab);
+    } else {
+        // Zotero 9: 追加到 paneHeader
+        paneHeader.appendChild(tab);
+    }
 
     // ── 面板容器 ──
     const box = doc.createElement("vbox");

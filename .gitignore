@@ -11,3 +11,10 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local vector database (auto-generated)
+notebook_lm_db/
+
+# Gradio temp files
+tmp/
+
