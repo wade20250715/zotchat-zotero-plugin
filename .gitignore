@@ -1,4 +1,4 @@
-﻿# Secrets
+# Secrets
 zotchat_config.json
 .env
 *.key
@@ -14,7 +14,19 @@ Thumbs.db
 
 # Local vector database (auto-generated)
 notebook_lm_db/
+chroma_db/
 
 # Gradio temp files
 tmp/
 
+# Build artifacts
+build/
+dist/
+*.spec
+*.ico
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
