@@ -1,0 +1,9 @@
+﻿# secrets and config
+zotchat_config.json
+zotchat_server.py
+start_zotchat_server.bat
+*_config.json
+.env
+*.key
+api_key*
+secret*
