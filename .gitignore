@@ -1,9 +1,13 @@
-﻿# secrets and config
+﻿# Secrets
 zotchat_config.json
-zotchat_server.py
-start_zotchat_server.bat
-*_config.json
 .env
 *.key
-api_key*
-secret*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
